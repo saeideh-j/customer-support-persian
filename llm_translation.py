@@ -15,6 +15,7 @@ def translate_to_persian(text: str, llm: BaseChatModel) -> str:
         "Here is the text to translate:\n\n" +
         text
     ).content
+
 def replace_fa_numbers_with_en(text):
     fa_numbers = "۰۱۲۳۴۵۶۷۸۹"
     en_numbers = "0123456789"
@@ -37,3 +38,4 @@ def replace_fa_numbers_with_en(text):
             i += 1
 
     return result
+
